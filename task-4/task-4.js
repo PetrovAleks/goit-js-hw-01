@@ -15,7 +15,7 @@ const totalPrice = message * pricePerDroid;
 
 if (totalPrice > credits) {
   console.log('Недостаточно средств на счету!');
-} else {
+} else if (message >= 0) {
   credits -= totalPrice;
   alert(`Вы купили ${message} дроидов, на счету осталось ${credits} кредитов.`);
 }
